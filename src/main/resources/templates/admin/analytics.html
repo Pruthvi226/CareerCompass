@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - CareerCompass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" th:href="@{/admin/dashboard}">
+            <span class="cc-brand-mark"><i class="fas fa-compass"></i></span>
+            CareerCompass Admin
+        </a>
+        <a class="btn btn-primary btn-sm" th:href="@{/admin/cutoffs/upload}">Upload Cutoffs</a>
+    </div>
+</nav>
+
+<header class="cc-page-title">
+    <div class="container">
+        <span class="cc-eyebrow mb-3"><i class="fas fa-chart-pie"></i> Platform analytics</span>
+        <h1>Analytics dashboard</h1>
+        <p class="text-muted mb-0">Track student activity, prediction volume and college data coverage.</p>
+    </div>
+</header>
+
+<main class="cc-page-shell">
+    <div class="container">
+        <div class="row g-3 mb-4">
+            <div class="col-md-3">
+                <div class="cc-stat">
+                    <span class="cc-stat-value" th:text="${stats.totalStudents}">0</span>
+                    <p class="cc-stat-label">Students</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cc-stat">
+                    <span class="cc-stat-value" th:text="${stats.totalColleges}">0</span>
+                    <p class="cc-stat-label">Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cc-stat">
+                    <span class="cc-stat-value" th:text="${stats.totalCutoffRecords}">0</span>
+                    <p class="cc-stat-label">Cutoffs</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cc-stat">
+                    <span class="cc-stat-value" th:text="${stats.totalPredictions}">0</span>
+                    <p class="cc-stat-label">Predictions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <section class="cc-panel">
+                    <h2 class="h5 fw-bold">Prediction count per exam</h2>
+                    <canvas id="examChart"></canvas>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="cc-panel">
+                    <h2 class="h5 fw-bold">Colleges by type</h2>
+                    <canvas id="collegeTypeChart"></canvas>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script th:inline="javascript">
+    const examData = /*[[${predictionsByExam}]]*/ {};
+    const typeData = /*[[${collegesByType}]]*/ {};
+    function drawChart(id, source, label, color) {
+        new Chart(document.getElementById(id), {
+            type: 'bar',
+            data: {
+                labels: Object.keys(source),
+                datasets: [{ label, data: Object.values(source), backgroundColor: color, borderRadius: 6 }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: 'rgba(24, 33, 42, 0.08)' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+    }
+    drawChart('examChart', examData, 'Predictions', '#2563eb');
+    drawChart('collegeTypeChart', typeData, 'Colleges', '#0f766e');
+</script>
+</body>
+</html>

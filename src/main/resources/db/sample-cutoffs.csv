@@ -1,0 +1,119 @@
+exam_name,college_name,branch_name,category,gender,quota,round,opening_rank,closing_rank,year
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,HS,1,1291,3115,2023
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,OS,1,889,2413,2023
+JEE Main,NIT Warangal,CSE,GEN-EWS,Gender-Neutral,HS,1,353,466,2023
+JEE Main,NIT Warangal,CSE,GEN-EWS,Gender-Neutral,OS,1,238,348,2023
+JEE Main,NIT Warangal,CSE,OBC-NCL,Gender-Neutral,HS,1,571,974,2023
+JEE Main,NIT Warangal,CSE,OBC-NCL,Gender-Neutral,OS,1,432,792,2023
+JEE Main,NIT Warangal,CSE,SC,Gender-Neutral,HS,1,350,719,2023
+JEE Main,NIT Warangal,CSE,SC,Gender-Neutral,OS,1,301,484,2023
+JEE Main,NIT Warangal,CSE,ST,Gender-Neutral,HS,1,34,78,2023
+JEE Main,NIT Warangal,CSE,ST,Gender-Neutral,OS,1,82,174,2023
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,HS,1,3845,6516,2023
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,OS,1,2776,5814,2023
+JEE Main,NIT Warangal,ECE,GEN-EWS,Gender-Neutral,HS,1,763,932,2023
+JEE Main,NIT Warangal,ECE,GEN-EWS,Gender-Neutral,OS,1,660,903,2023
+JEE Main,NIT Warangal,ECE,OBC-NCL,Gender-Neutral,HS,1,1316,2366,2023
+JEE Main,NIT Warangal,ECE,OBC-NCL,Gender-Neutral,OS,1,1437,1877,2023
+JEE Main,NIT Warangal,ECE,SC,Gender-Neutral,HS,1,838,1297,2023
+JEE Main,NIT Warangal,ECE,SC,Gender-Neutral,OS,1,265,1238,2023
+JEE Main,NIT Warangal,ECE,ST,Gender-Neutral,HS,1,275,277,2023
+JEE Main,NIT Warangal,ECE,ST,Gender-Neutral,OS,1,246,361,2023
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,HS,1,6879,11388,2023
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,OS,1,6710,9265,2023
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,HS,1,7179,17718,2023
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,OS,1,8892,15749,2023
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,HS,1,16370,32906,2023
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,OS,1,18155,28010,2023
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,HS,1,15975,27034,2023
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,OS,1,14098,20446,2023
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,HS,1,4832,40209,2023
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,OS,1,18854,31192,2023
+NEET UG,AIIMS Delhi,MBBS,OPEN,Gender-Neutral,AI,5,56,56,2023
+NEET UG,AIIMS Delhi,MBBS,GEN-EWS,Gender-Neutral,AI,5,258,258,2023
+NEET UG,AIIMS Delhi,MBBS,OBC-NCL,Gender-Neutral,AI,5,255,255,2023
+NEET UG,AIIMS Delhi,MBBS,SC,Gender-Neutral,AI,5,989,989,2023
+NEET UG,AIIMS Delhi,MBBS,ST,Gender-Neutral,AI,5,1624,1624,2023
+NEET UG,AIIMS Jodhpur,MBBS,OPEN,Gender-Neutral,AI,5,534,534,2023
+NEET UG,AIIMS Jodhpur,MBBS,GEN-EWS,Gender-Neutral,AI,5,1082,1082,2023
+NEET UG,AIIMS Jodhpur,MBBS,OBC-NCL,Gender-Neutral,AI,5,1086,1086,2023
+NEET UG,AIIMS Jodhpur,MBBS,SC,Gender-Neutral,AI,5,6075,6075,2023
+NEET UG,AIIMS Jodhpur,MBBS,ST,Gender-Neutral,AI,5,11350,11350,2023
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,HS,1,755,2698,2024
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,OS,1,731,1899,2024
+JEE Main,NIT Warangal,AIML,OPEN,Gender-Neutral,HS,1,787,3387,2024
+JEE Main,NIT Warangal,AIML,OPEN,Gender-Neutral,OS,1,1486,2473,2024
+JEE Main,NIT Warangal,MNC,OPEN,Gender-Neutral,HS,1,3134,4017,2024
+JEE Main,NIT Warangal,MNC,OPEN,Gender-Neutral,OS,1,2617,3047,2024
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,HS,1,3393,4979,2024
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,OS,1,3530,4444,2024
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,HS,1,5675,8257,2024
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,OS,1,5331,7134,2024
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,HS,1,10328,15135,2024
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,OS,1,8791,12050,2024
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,HS,1,12913,27249,2024
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,OS,1,18712,22586,2024
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,HS,1,10578,22384,2024
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,OS,1,12953,17000,2024
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,HS,1,26936,35793,2024
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,OS,1,15149,24933,2024
+JEE Main,NIT Warangal,MME,OPEN,Gender-Neutral,HS,1,27910,34826,2024
+JEE Main,NIT Warangal,MME,OPEN,Gender-Neutral,OS,1,20856,25407,2024
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,OS,2,1043,2011,2024
+JEE Main,NIT Warangal,AIML,OPEN,Gender-Neutral,OS,2,1486,2525,2024
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,HS,2,3393,5042,2024
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,OS,2,5331,7396,2024
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,OS,2,7204,12665,2024
+JEE Main,Indian Institute of Information Technology Surat,CSE,OPEN,Gender-Neutral,AI,5,12117,25108,2024
+JEE Main,Indian Institute of Information Technology Surat,CSE,OPEN,Female-only,AI,5,31653,33933,2024
+JEE Main,Indian Institute of Information Technology Surat,CSE,OBC-NCL,Gender-Neutral,AI,5,8876,11302,2024
+JEE Main,Indian Institute of Information Technology Surat,CSE,SC,Gender-Neutral,AI,5,3175,7837,2024
+JEE Main,Indian Institute of Information Technology Surat,CSE,ST,Gender-Neutral,AI,5,2114,3112,2024
+JEE Main,Indian Institute of Information Technology Surat,ECE,OPEN,Gender-Neutral,AI,5,22702,34263,2024
+JEE Main,Indian Institute of Information Technology Surat,ECE,OPEN,Female-only,AI,5,32016,35609,2024
+JEE Main,Indian Institute of Information Technology Surat,ECE,OBC-NCL,Gender-Neutral,AI,5,13335,15703,2024
+JEE Main,Indian Institute of Information Technology Surat,ECE,SC,Gender-Neutral,AI,5,5294,8904,2024
+JEE Main,Indian Institute of Information Technology Surat,ECE,ST,Gender-Neutral,AI,5,2721,3755,2024
+NEET UG,AIIMS Delhi,MBBS,OPEN,Gender-Neutral,AI,1,1,47,2024
+NEET UG,AIIMS Delhi,MBBS,GEN-EWS,Gender-Neutral,AI,1,214,214,2024
+NEET UG,AIIMS Delhi,MBBS,OBC-NCL,Gender-Neutral,AI,1,34,186,2024
+NEET UG,AIIMS Delhi,MBBS,SC,Gender-Neutral,AI,1,35,647,2024
+NEET UG,AIIMS Jodhpur,MBBS,OPEN,Gender-Neutral,AI,1,157,374,2024
+NEET UG,AIIMS Jodhpur,MBBS,GEN-EWS,Gender-Neutral,AI,1,805,805,2024
+NEET UG,AIIMS Jodhpur,MBBS,OBC-NCL,Gender-Neutral,AI,1,346,695,2024
+NEET UG,AIIMS Jodhpur,MBBS,SC,Gender-Neutral,AI,1,1228,4912,2024
+NEET UG,JIPMER Puducherry,MBBS,OPEN,Gender-Neutral,AI,1,350,2949,2024
+NEET UG,JIPMER Puducherry,MBBS,OBC-NCL,Gender-Neutral,AI,1,1860,4175,2024
+NEET UG,JIPMER Puducherry,MBBS,SC,Gender-Neutral,AI,1,8670,24789,2024
+NEET UG,JIPMER Puducherry,MBBS,ST,Gender-Neutral,AI,1,27421,62372,2024
+TS EAMCET,JNTUH College of Engineering,CSE,OPEN,MALE,HS,1,1,894,2024
+TS EAMCET,JNTUH College of Engineering,CSE,OPEN,FEMALE,HS,1,1,1062,2024
+TS EAMCET,JNTUH College of Engineering,AIML,OPEN,MALE,HS,1,895,1695,2024
+TS EAMCET,JNTUH College of Engineering,AIML,OPEN,FEMALE,HS,1,1063,1417,2024
+AP EAMCET,JNTUA College of Engineering Anantapur,CSE,OPEN,MALE,HS,1,3657,3657,2024
+AP EAMCET,JNTUA College of Engineering Anantapur,CSE,OPEN,FEMALE,HS,1,3857,3857,2024
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,HS,1,1576,2386,2025
+JEE Main,NIT Warangal,CSE,OPEN,Gender-Neutral,OS,1,239,1562,2025
+JEE Main,NIT Warangal,AIML,OPEN,Gender-Neutral,HS,1,3224,3224,2025
+JEE Main,NIT Warangal,AIML,OPEN,Gender-Neutral,OS,1,2629,2629,2025
+JEE Main,NIT Warangal,MNC,OPEN,Gender-Neutral,HS,1,2487,3526,2025
+JEE Main,NIT Warangal,MNC,OPEN,Gender-Neutral,OS,1,2055,2892,2025
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,HS,1,2412,4534,2025
+JEE Main,NIT Warangal,ECE,OPEN,Gender-Neutral,OS,1,2598,4292,2025
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,HS,1,7633,7633,2025
+JEE Main,NIT Warangal,EEE,OPEN,Gender-Neutral,OS,1,6869,6869,2025
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,HS,1,7628,13565,2025
+JEE Main,NIT Warangal,MECH,OPEN,Gender-Neutral,OS,1,7449,11967,2025
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,HS,1,26648,26648,2025
+JEE Main,NIT Warangal,CIVIL,OPEN,Gender-Neutral,OS,1,23764,23764,2025
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,HS,1,19671,19671,2025
+JEE Main,NIT Warangal,CHE,OPEN,Gender-Neutral,OS,1,16305,16305,2025
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,HS,1,29863,29863,2025
+JEE Main,NIT Warangal,BT,OPEN,Gender-Neutral,OS,1,21884,21884,2025
+JEE Main,NIT Warangal,MME,OPEN,Gender-Neutral,HS,1,34102,34102,2025
+JEE Main,NIT Warangal,MME,OPEN,Gender-Neutral,OS,1,24783,24783,2025
+NEET UG,AIIMS Delhi,MBBS,OPEN,Gender-Neutral,AI,1,48,48,2025
+NEET UG,AIIMS Delhi,MBBS,GEN-EWS,Gender-Neutral,AI,1,254,254,2025
+NEET UG,AIIMS Delhi,MBBS,OBC-NCL,Gender-Neutral,AI,1,206,206,2025
+NEET UG,AIIMS Delhi,MBBS,SC,Gender-Neutral,AI,1,644,644,2025
+NEET UG,AIIMS Delhi,MBBS,ST,Gender-Neutral,AI,1,1405,1405,2025

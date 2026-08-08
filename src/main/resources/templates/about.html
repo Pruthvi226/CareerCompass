@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CareerCompass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light cc-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
+            <span class="cc-brand-mark"><i class="fas fa-compass"></i></span>
+            CareerCompass
+        </a>
+        <div class="d-flex gap-2">
+            <a class="btn btn-outline-secondary btn-sm" th:href="@{/colleges}">Colleges</a>
+            <a class="btn btn-primary btn-sm" th:href="@{/register}">Create Account</a>
+        </div>
+    </div>
+</nav>
+
+<header class="cc-page-title">
+    <div class="container">
+        <span class="cc-eyebrow mb-3"><i class="fas fa-graduation-cap"></i> Engineering + medical counselling</span>
+        <h1>CareerCompass helps aspirants predict colleges from rank, score, category, quota, and historical cutoff data.</h1>
+        <p class="text-muted mb-0">One platform for JEE, EAMCET, BITSAT, NEET UG and state counselling workflows.</p>
+    </div>
+</header>
+
+<main class="cc-page-shell">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <section class="cc-panel mb-4">
+                    <h2 class="h4 fw-bold">Why this exists</h2>
+                    <p class="text-muted mb-0">
+                        Students often receive a rank but still struggle to translate it into realistic college choices. CareerCompass groups colleges into Safe, Moderate and Dream buckets so students can build a practical counselling list without reading hundreds of cutoff rows manually.
+                    </p>
+                </section>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="cc-action h-100">
+                            <span class="cc-action-icon"><i class="fas fa-ranking-star"></i></span>
+                            <span><h6>Rank prediction</h6><small>Filters by exam, rank, category, quota, gender and state.</small></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cc-action h-100">
+                            <span class="cc-action-icon"><i class="fas fa-heart"></i></span>
+                            <span><h6>Wishlist</h6><small>Save colleges and courses during research.</small></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cc-action h-100">
+                            <span class="cc-action-icon"><i class="fas fa-code-compare"></i></span>
+                            <span><h6>Comparison</h6><small>Review fees, placement, hostel and medical fields together.</small></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cc-action h-100">
+                            <span class="cc-action-icon"><i class="fas fa-chart-line"></i></span>
+                            <span><h6>Cutoff trends</h6><small>See closing-rank movement from uploaded cutoff data.</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-lg-5">
+                <section class="cc-panel">
+                    <h2 class="h4 fw-bold">Built for students and institutions</h2>
+                    <p class="text-muted">The admin side manages colleges, courses, exams and CSV cutoff uploads. The student side turns that data into searchable, comparable recommendations.</p>
+                    <div class="cc-note mb-3">
+                        Predictions are based on historical cutoffs and are not admission guarantees.
+                    </div>
+                    <a class="btn btn-accent w-100" th:href="@{/register}">
+                        <i class="fas fa-user-plus me-1"></i>Create Student Account
+                    </a>
+                </section>
+            </aside>
+        </div>
+    </div>
+</main>
+</body>
+</html>

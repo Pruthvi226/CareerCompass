@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCompass - Exam Rank and College Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light cc-navbar fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
+            <span class="cc-brand-mark"><i class="fas fa-compass"></i></span>
+            CareerCompass
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="homeNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><a class="nav-link" th:href="@{/colleges}">Colleges</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/about}">About</a></li>
+                <li class="nav-item" sec:authorize="isAuthenticated()"><a class="btn btn-primary btn-sm" th:href="@{/dashboard}">Dashboard</a></li>
+                <li class="nav-item" sec:authorize="!isAuthenticated()"><a class="nav-link" th:href="@{/login}">Login</a></li>
+                <li class="nav-item" sec:authorize="!isAuthenticated()"><a class="btn btn-primary btn-sm" th:href="@{/register}">Create Account</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="cc-hero">
+    <div class="container">
+        <span class="cc-eyebrow mb-3"><i class="fas fa-graduation-cap"></i> Engineering and medical counselling</span>
+        <h1>CareerCompass</h1>
+        <p class="lead mt-3">
+            Predict colleges from rank, category, quota, state preference and verified historical cutoff data.
+        </p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+            <a class="btn btn-accent btn-lg" th:href="@{/student/predictor}" sec:authorize="isAuthenticated()">
+                <i class="fas fa-chart-line me-2"></i>Start Predictor
+            </a>
+            <a class="btn btn-accent btn-lg" th:href="@{/register}" sec:authorize="!isAuthenticated()">
+                <i class="fas fa-user-plus me-2"></i>Start Free
+            </a>
+            <a class="btn btn-ghost-light btn-lg" th:href="@{/colleges}">
+                <i class="fas fa-building-columns me-2"></i>Explore Colleges
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="cc-section">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="cc-stat">
+                    <span class="cc-stat-value">3</span>
+                    <p class="cc-stat-label">Admission chance groups</p>
+                    <p class="text-muted mb-0">Safe, Moderate and Dream options for practical choice filling.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-stat">
+                    <span class="cc-stat-value">2023-25</span>
+                    <p class="cc-stat-label">Starter cutoff years</p>
+                    <p class="text-muted mb-0">Source-tracked JoSAA, NEET UG and state counselling examples.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-stat">
+                    <span class="cc-stat-value">2</span>
+                    <p class="cc-stat-label">Aspirant tracks</p>
+                    <p class="text-muted mb-0">Engineering and medical workflows in the same student dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cc-section pt-0">
+    <div class="container">
+        <div class="cc-section-title">
+            <span class="cc-eyebrow mb-3">Built for counselling season</span>
+            <h2>Everything a student checks before locking choices.</h2>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-xl-3">
+                <a class="cc-action" th:href="@{/student/predictor}">
+                    <span class="cc-action-icon"><i class="fas fa-ranking-star"></i></span>
+                    <span><h6>Rank Predictor</h6><small>Filter by exam, category, quota and budget.</small></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <a class="cc-action" th:href="@{/student/trends}">
+                    <span class="cc-action-icon"><i class="fas fa-chart-simple"></i></span>
+                    <span><h6>Cutoff Trends</h6><small>Round-wise and year-wise rank movement.</small></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <a class="cc-action" th:href="@{/student/compare}">
+                    <span class="cc-action-icon"><i class="fas fa-code-compare"></i></span>
+                    <span><h6>College Compare</h6><small>Fees, placements, seats, hostel and medical details.</small></span>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <a class="cc-action" th:href="@{/student/predictor/choice-filling}">
+                    <span class="cc-action-icon"><i class="fas fa-list-ol"></i></span>
+                    <span><h6>Choice Planner</h6><small>Dream first, moderate next, safe choices last.</small></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="cc-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>CareerCompass 2026</span>
+        <span>Predictions use historical cutoff data and are not admission guarantees.</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

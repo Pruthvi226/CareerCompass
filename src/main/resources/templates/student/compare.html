@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Colleges - CareerCompass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" th:href="@{/student/dashboard}">
+            <span class="cc-brand-mark"><i class="fas fa-compass"></i></span>
+            CareerCompass
+        </a>
+        <div class="d-flex gap-2">
+            <a class="btn btn-outline-secondary btn-sm" th:href="@{/student/wishlist}">Wishlist</a>
+            <a class="btn btn-primary btn-sm" th:href="@{/colleges}">Browse</a>
+        </div>
+    </div>
+</nav>
+
+<header class="cc-page-title">
+    <div class="container">
+        <span class="cc-eyebrow mb-3"><i class="fas fa-code-compare"></i> Decision support</span>
+        <h1>Compare colleges</h1>
+        <p class="text-muted mb-0">Compare up to 3 colleges across fees, placements, hostel, medical details and counselling type.</p>
+    </div>
+</header>
+
+<main class="cc-page-shell">
+    <div class="container">
+        <form method="get" th:action="@{/student/compare}" class="cc-panel mb-4">
+            <div class="row g-3">
+                <div class="col-md-4" th:each="slot : ${#numbers.sequence(1,3)}">
+                    <label class="form-label" th:for="'college-' + ${slot}" th:text="'College ' + ${slot}">College</label>
+                    <select th:id="'college-' + ${slot}" name="collegeIds" class="form-select">
+                        <option value="">Choose college</option>
+                        <option th:each="college : ${colleges}" th:value="${college.id}" th:text="${college.name}"></option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">
+                <i class="fas fa-code-compare me-1"></i>Compare
+            </button>
+        </form>
+
+        <div th:if="${!#lists.isEmpty(selectedColleges)}" class="cc-table-wrap table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th th:each="college : ${selectedColleges}" th:text="${college.name}">College</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><th>Type</th><td th:each="college : ${selectedColleges}" th:text="${college.collegeType}">Type</td></tr>
+                <tr><th>Location</th><td th:each="college : ${selectedColleges}" th:text="${college.city + ', ' + college.state}">Location</td></tr>
+                <tr><th>Fees</th><td th:each="college : ${selectedColleges}" th:text="${college.fees ?: 'NA'}">NA</td></tr>
+                <tr><th>Average Package</th><td th:each="college : ${selectedColleges}" th:text="${college.averagePackage ?: 'NA'}">NA</td></tr>
+                <tr><th>Highest Package</th><td th:each="college : ${selectedColleges}" th:text="${college.highestPackage ?: 'NA'}">NA</td></tr>
+                <tr><th>Placement %</th><td th:each="college : ${selectedColleges}" th:text="${college.placementPercentage != null ? college.placementPercentage + '%' : 'NA'}">NA</td></tr>
+                <tr><th>NIRF Rank</th><td th:each="college : ${selectedColleges}" th:text="${college.nirfRank ?: 'NA'}">NA</td></tr>
+                <tr><th>Hostel</th><td th:each="college : ${selectedColleges}" th:text="${college.hostelAvailable == true ? 'Available' : 'Not confirmed'}">NA</td></tr>
+                <tr><th>Seat Intake</th><td th:each="college : ${selectedColleges}" th:text="${college.seatIntake ?: 'NA'}">NA</td></tr>
+                <tr><th>Bond</th><td th:each="college : ${selectedColleges}" th:text="${college.bondDetails ?: 'NA'}">NA</td></tr>
+                <tr><th>Hospital</th><td th:each="college : ${selectedColleges}" th:text="${college.hospitalAttached == true ? 'Attached' : 'NA'}">NA</td></tr>
+                <tr>
+                    <th>Details</th>
+                    <td th:each="college : ${selectedColleges}">
+                        <a class="btn btn-sm btn-outline-primary" th:href="@{/colleges/{id}(id=${college.id})}">Open</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div th:if="${#lists.isEmpty(selectedColleges)}" class="cc-note">
+            Pick two or three colleges above to see the comparison table.
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
